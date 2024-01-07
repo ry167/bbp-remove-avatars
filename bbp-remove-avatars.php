@@ -25,6 +25,10 @@ function bbpra_remove_avatar_section($author_links, $r, $args){
 	return $author_links;
 }
 add_filter('bbp_get_author_links', 'bbpra_remove_avatar_section', 10 , 3);
+function bbpra_reply_padding_fix(){
+	echo '<style>.bbp-reply-author { padding-top: 12px; }</style>';
+}
+add_action('bbp_template_before_replies_loop', 'bbpra_reply_padding_fix');
 
 // Remove from user profile page. You should really just edit the template though...
 function bbpra_return_1(){
@@ -32,6 +36,6 @@ function bbpra_return_1(){
 }
 add_filter('bbp_single_user_details_avatar_size', 'bbpra_return_1');
 function bbpra_hide_profile_avatar(){
-	echo '<style>#bbp-user-avatar {display: none;}</style>';
+	echo '<style>#bbp-user-avatar { display: none; }</style>';
 }
 add_action('bbp_template_before_user_details', 'bbpra_hide_profile_avatar');
