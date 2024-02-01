@@ -20,7 +20,7 @@ The override for the profile page is a bit of a hack with a 1px Gravatar and a C
 
 == Installation ==
 
-1. Download the zip file from GitHub: https://github.com/ry167/bbp-remove-avatars/archive/master.zip
+1. Download the zip file from GitHub: https://github.com/ryanhalliday/bbp-remove-avatars/archive/master.zip
 2. Upload it to your site.
 
 == Frequently Asked Questions ==
